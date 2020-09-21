@@ -1,4 +1,4 @@
-import random
+import random, json
 from flask import Flask, render_template, request, redirect, session, flash, url_for
 
 app = Flask(__name__)
@@ -23,7 +23,7 @@ class Cliente:
             else:
                 return credito
         elif 800 <= self.score <= 950:
-            return self.renda * 2
+            return self.renda * 2.0
         elif 951 <= self.score <= 999:
             return 1000000.00
 

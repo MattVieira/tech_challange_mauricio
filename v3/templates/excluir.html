@@ -1,0 +1,12 @@
+{% extends "template.html" %}
+{% block conteudo %}
+      <form action="/delet" method="delete">
+        <fieldset>
+          <div class="form-group">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" class="form-control">
+          </div>
+          <button type="submit" class="btn btn-primary btn-excluir">Excluir</button>
+        </fieldset>
+      </form>
+{% endblock %}
